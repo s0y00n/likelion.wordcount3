@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!!wordcount project!!</title>
+</head>
+<body>
+    <h1>문장 입력 후 "결과 확인"버튼을 클릭하셈</h1>
+    <br>
+    <form action="{% url 'result' %}">
+        <textarea name="fulltext" id="" cols="40" rows="10"></textarea>
+        <br>
+        <input type="submit"value="결과 확인">
+        <a href="{% url 'about' %}" >프로젝트 소개</a>
+        
+    </form>
+</body>
+</html>

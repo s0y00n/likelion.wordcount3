@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>이 문장은 총 {{ total }}개의 단어로 이루어져 있긔.</h1>
+    <h2>당신이 쓴 텍스트 : {{ full }}</h2>
+    <hr>
+    <h3>단어 카운트 :  </h3>
+    {% for word, count in dictionary %}
+        {{ word }} : {{ count }} <br>
+    {% endfor %}                   
+    <hr>
+    <a href="{% url 'home' %}">home으로 돌아가기</a>
+</body>
+</html>
